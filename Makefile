@@ -5,7 +5,7 @@ all: heap
 run: heap
 	./$(NAME).exe
 
-heap
+heap: 
 	g++ *.cpp -o $(NAME).exe
 
 gdb:
