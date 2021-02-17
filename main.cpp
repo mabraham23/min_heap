@@ -11,8 +11,8 @@ void testBinaryHeap() {
     std::vector<Element> test{};
 
     // values for id and key
-    std::vector<int> ids{1,2,3,4,5,6,7,8};
-    std::vector<int> keys{21,22,25,30,31,26,25,45};
+    std::vector<int> ids{0,1,2,3,4,5,6,7,8};
+    std::vector<int> keys{27,26,25,21,30,25,31,45,22};
 
     // fill the test vector
     for ( int i=0; i<keys.size(); i++){

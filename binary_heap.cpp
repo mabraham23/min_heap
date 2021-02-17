@@ -16,8 +16,7 @@ BinaryHeap::BinaryHeap(std::vector<Element> elements ){
     }
 
     for( int i=mCapacity-1; i >= 0; i-- ){
-        Element x{mIDs[i], mKeys[i]};
-        this->siftDown( x, i);
+        this->siftDown( Element{this->mIDs[i], this->mKeys[i]}, i);
     }
 }
 
@@ -123,18 +122,22 @@ int min( int a, int b ){
 
 
 std::ostream& operator<<( std::ostream& out, const BinaryHeap& heap ){
+    out << "ids: ";
     for( int i=0; i < heap.mSize; i++ ){
         out << heap.mIDs[i] << " ";
     }
     out << std::endl;
+    out << "keys: ";
     for( int i=0; i < heap.mSize; i++ ){
         out << heap.mKeys[i] << " ";
     }
     out << std::endl;
+    out << "indicies: ";
     for( int i=0; i < heap.mSize; i++ ){
         out << heap.mIndices[i] << " ";
     }
     out << std::endl;
+    out << "size: ";
     for( int i=0; i < heap.mSize; i++ ){
         out << i << " ";
     }
