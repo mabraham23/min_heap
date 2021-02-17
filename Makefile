@@ -12,4 +12,4 @@ gdb:
 	g++ -g *.cpp -o $(NAME).exe
 
 clean:
-	rm *.o *.exe
+	rm -f *.o *.exe
