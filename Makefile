@@ -9,7 +9,7 @@ heap:
 	g++ -std=c++11 *.cpp -o $(NAME).exe
 
 gdb:
-	g++ -std=c++11 -g *.cpp -o $(NAME).exe
+	g++ -std=c++11 *.cpp -o $(NAME).exe
 
 clean:
 	rm -f *.o *.exe
