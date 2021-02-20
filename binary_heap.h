@@ -28,7 +28,7 @@ public:
     void bubbleUp( Element x, int i );
     void siftDown( Element x, int i );
     void Insert( Element x );
-    void decreaseKey( int id );
+    void decreaseKey( int id, int key );
     int deleteMin();
     int minChild( int i );
     int Index( int ID );

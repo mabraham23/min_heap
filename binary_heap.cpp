@@ -71,9 +71,8 @@ void BinaryHeap::Insert( Element x ){
     bubbleUp( x, mSize-1);
 }
 
-void BinaryHeap::decreaseKey( int id ){
-    int i = Index(id);
-    this->bubbleUp(Element{ this->mIDs[i], this->mKeys[i] }, i);
+void BinaryHeap::decreaseKey( int id, int newkey ){
+    this->bubbleUp(Element{ id, newkey }, this->Index(id)) ;
 }
 
 // given two indecies in the heap, return the smalles one
